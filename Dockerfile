@@ -104,7 +104,7 @@ ENV RUBY_GEMS \
  # Required for "bundle exec"
  bundler:1.17.2 \
  # Newer version to ensure later gem installation
- rake:12.3.2 \
+ rake:12.3.3 \
  #
  # Gems required across the web sites. Please comment to ensure everyone knows
  # which gem is used by which web site. If you are removing a web site as a user

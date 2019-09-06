@@ -151,11 +151,6 @@ check_srv_source() {
 # specified in $2, copy the files to the path specified in $3.
 check_srv_varname() {
     if [ -d "/srv/$1" ]; then
-        get_repo_url "/srv/$1/.git/config"
-        if [ "$REPOURL" != "$2" ]; then
-            # Not this repo
-            return 1
-        fi
         echo "Copying $1 repo files into $3"
         # Build the destination path and make sure it exists. Note that
         # the paths read from the manifest file always start with /
