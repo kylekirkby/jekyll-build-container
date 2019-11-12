@@ -119,6 +119,7 @@ check_repo_url() {
     # $2 is the URL we want to match against.
     if [ ! -f "$1" ]; then
         # No file to get the URL from so quietly fail back to the caller
+        echo "Cannot read $1"
         REPOURL=""
         return
     fi
@@ -136,11 +137,15 @@ check_repo_url() {
         parse_repo_url "$u"
         if [ "$REPOURL" == "$2" ]; then
             # Got a match
+            echo "Matched $2"
             return
+        else
+            echo "Didn't match '$2' against '$REPOURL'"
         fi
     done
     #
     # No matches on this repo
+    echo "No matches on this repo"
     REPOURL=""
 }
 
