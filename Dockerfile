@@ -124,7 +124,7 @@ ENV RUBY_GEMS \
  # Used by 96boards.org
  jekyll-toc:0.12.1 \
  # Used by all Jekyll sites
- jumbo-jekyll-theme:5.6.9.2 \
+ jumbo-jekyll-theme:5.6.9.3 \
  # Used by devicetree.org, op-tee.org
  mini_magick:4.9.3 \
  # Used by connect.linaro.org, linaro.cloud, linaro.org
